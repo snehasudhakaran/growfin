@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root{
+
+  /* color variables */
+  --text-white : #FFFFFF ;
+  --text-blue : #1E40AF;
+  --text-black : #000000;
+  --text-blue-gradient : linear-gradient(to bottom,#1653d7, #0d3cab, #1c3e91,  #0c285e, #061f4c, #04173a, #030d29);
+  --button-text-color-blue : #0F172A;
+  --button-text-primaryblue : #05FFFF;
+  --button-text-violent : #7C3AED;
+  --email-text-color : #00D4C7;
+
+  /* background color variables */
+  --bg-white : #FFFFFF;
+  --navbar-bgcolor : #2563EB;
+  --section-bgcolor : linear-gradient(to bottom, #2563eb, #2458d2, #234eb9, #2144a1, #1e3a8a, #1e3a8a, #1e3a8a, #1e3a8a);
+  --bgcolor-blue-gradient : linear-gradient(to right, #2563eb, #2459d2, #234fba, #234fba, #2145a2,#1f3b8b, #1f3b8b);
+  --button-primary : #05FFFF;
+  --button-secondary :  #7C3AED;
+  --bg-violet : #C4B5FD;
+  --drp1 : #93C5FD;
+  --drp2 : #DBEAFE;
+  --bg-lightblue : #E4FDFF;
+
+  /* font variables */
+  ---primary-text-font : 'Montserrat', sans-serif;
+  --secondary-text-font : 'Inter', sans-serif;
+
+}
+
+/* navbar */
+
+header .navbar , .banner-container h1 , .banner-container .buttons, .early-customers-title, .quotes, .card-title, footer, .experience h1, .secure h1, h1{
+  font-family: var(---primary-text-font);
+}
+
+.banner-container .banner-text, .early-customers p, .experience p, .secure p, p{
+  font-family: var(--secondary-text-font);
+}
+
+header .navbar{
+  background: var(--navbar-bgcolor);
+}
+
+.buttons button{
+  background-color: var(--button-primary);
+  color: var(--button-text-color-blue);
+  border-radius: 20px;
+  font-size: 16px;
+  height:36px;
+  letter-spacing: 0.3px;
+}
+
+.buttons button:last-child {
+  background-color: transparent;
+  color: var(--button-text-primaryblue);
+  border: 2px solid var(--button-text-primaryblue);
+}
+
+.banner-container{
+  background: var(--section-bgcolor);
+}
+
+.banner-container .banner-text, .banner-container .banner-title{
+  color: var(--text-white);
+  line-height: 1.2em;
+}
+
+.banner-container .buttons button, .card .buttons button, .experience .buttons button{
+  height:45px;
+}
+
+.early-customers{
+  color: var(--text-blue-gradient);
+}
+
+.early-customers-title{
+  line-height: 1.3em;
+  font-weight: bold;
+  background: var(--text-blue-gradient); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
+}
+
+.quotes{
+  color: var(--text-black);
+}
+
+.carousel-dot{
+  background-color: var(--drp2);
+  border-radius: 50%;
+}
+
+.carousel-dot.active {
+  background-color: var(--drp1); /* Color for the active dot */
+}
+
+.experience{
+  background: var(--bg-lightblue);
+}
+
+.card{
+  background: var(--bgcolor-blue-gradient);
+  border-radius: 7px;
+}
+
+.card-title{
+  color: var(--text-white);
+  line-height: 1.2em;
+}
+
+.email-text{
+  color: var(--email-text-color);
+}
+
+.experience .buttons button{
+  background-color: var(--button-secondary);
+  color: var(--text-white);
+}
+
+.experience .buttons button:last-child {
+  background-color: transparent;
+  color: var(--button-secondary);
+  border: 2px solid var(--button-secondary);
+}
+
+.transform-con-2{
+  border-radius: 7px;
+}
